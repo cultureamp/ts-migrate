@@ -1,5 +1,6 @@
 import { Plugin as PluginType } from 'ts-migrate-server';
 import addConversionsPlugin from './plugins/add-conversions';
+import findAndReplacePlugin from './plugins/find-and-replace';
 import declareMissingClassPropertiesPlugin from './plugins/declare-missing-class-properties';
 import eslintFixPlugin from './plugins/eslint-fix';
 import explicitAnyPlugin from './plugins/explicit-any';
@@ -22,6 +23,7 @@ export type SourceTextUpdate = SourceTextUpdateType;
 
 export {
   addConversionsPlugin,
+  findAndReplacePlugin,
   declareMissingClassPropertiesPlugin,
   eslintFixPlugin,
   explicitAnyPlugin,

@@ -7,6 +7,7 @@ import yargs from 'yargs';
 
 import {
   addConversionsPlugin,
+  findAndReplacePlugin,
   declareMissingClassPropertiesPlugin,
   eslintFixPlugin,
   explicitAnyPlugin,
@@ -99,6 +100,7 @@ yargs
       if (args.plugin) {
         const availablePlugins = [
           addConversionsPlugin,
+          findAndReplacePlugin,
           declareMissingClassPropertiesPlugin,
           eslintFixPlugin,
           explicitAnyPlugin,
@@ -162,6 +164,7 @@ yargs
           })
           .addPlugin(explicitAnyPlugin, { anyAlias })
           .addPlugin(addConversionsPlugin, { anyAlias })
+          .addPlugin(findAndReplacePlugin, { anyAlias })
           // We need to run eslint-fix before ts-ignore because formatting may affect where
           // the errors are that need to get ignored.
           .addPlugin(eslintFixPlugin, {})
