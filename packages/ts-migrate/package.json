@@ -63,13 +63,13 @@
   "license": "MIT",
   "dependencies": {
     "create-jest-runner": "^0.5.3",
-    "json5": "^2.1.1",
-    "json5-writer": "^0.1.8",
+    "json5": "^2.2.1",
+    "json5-writer": "^0.2.0",
     "ts-migrate-plugins": "^0.1.15",
     "ts-migrate-server": "^0.1.15",
     "typescript": "4.1.2",
     "updatable-log": "^0.2.0",
-    "yargs": "^15.0.2"
+    "yargs": "^16.1.1"
   },
   "devDependencies": {
     "@types/react": "^16.9.16",
